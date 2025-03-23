@@ -11,7 +11,6 @@
 - **Text-to-Speech**: Listen to chatbot responses with text-to-speech functionality.
 - **Multi-Language Support**: Supports multiple languages for broader accessibility.
 - **Real-Time Assistance**: Get instant answers and guidance for government-related queries.
-- **Conversation History**: Maintains a history of user interactions for better context.
 
 ---
 
