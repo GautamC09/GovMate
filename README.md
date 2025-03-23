@@ -99,7 +99,7 @@ cd govmate
 
 ---
 
-### Usage
+## Usage
 
 **1. Access the Platform:**
 - Open your browser and navigate to http://localhost:5173.
@@ -111,5 +111,13 @@ cd govmate
 
 ---
 
-### Screenshots
+## Screenshots
 
+![Homepage Screenshot](./Screenshots/Landing.png)
+*Caption: The application homepage.*
+
+![Features](./Screenshots/Features.png)
+*Caption: Available Chatbots*
+
+![Analysis Results](./Screenshots/Chatbot.png)
+*Caption: Example of Chat*
