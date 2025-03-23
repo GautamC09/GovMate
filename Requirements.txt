@@ -1,0 +1,5 @@
+Flask==2.3.2
+Flask-CORS==4.0.0
+pinecone-client==2.2.4
+sentence-transformers==2.2.2
+groq==0.20.0

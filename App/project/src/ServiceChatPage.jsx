@@ -109,32 +109,35 @@ const ServiceChatPage = () => {
   // Handle prompt submission
   const handlePromptSubmit = async () => {
     if (!prompt.trim()) return;
-
+  
     setConversation((prev) => [
       ...prev,
       { role: "user", content: prompt.trim() },
     ]);
-
+  
     setPrompt("");
-
+  
     try {
-      const res = await fetch(`http://127.0.0.1:${port}/chat`, {
+      // Format the service title: lowercase and replace spaces with hyphens
+      const formattedServiceTitle = decodedTitle.toLowerCase().replace(/\s+/g, '-');
+  
+      const res = await fetch(`http://127.0.0.1:5000/${formattedServiceTitle}/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ query: prompt.trim() }),
       });
-
+  
       const data = await res.json();
-
+  
       if (data.response) {
         const botResponse = data.response;
         setConversation((prev) => [
           ...prev,
           { role: "bot", content: botResponse },
         ]);
-
+  
         // Speak the bot's response only if TTS is enabled
         if (isTTSEnabled) {
           speakText(botResponse);
@@ -153,7 +156,7 @@ const ServiceChatPage = () => {
       ]);
     }
   };
-
+  
   // Handle Enter key for prompt submission
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {

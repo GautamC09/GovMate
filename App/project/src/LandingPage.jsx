@@ -36,10 +36,12 @@ export const Hero = () => {
             legal aid, or filing a complaint.
           </p>
           <div className="mt-6 flex space-x-4">
-            {/* 3) Changed "Try Chatbot Demo" to "Get Started" */}
-            <button className="bg-primary-600 text-white px-6 py-3 rounded hover:bg-primary-700 transition duration-300">
+          <Link
+              to="/services"
+              className="bg-primary-600 text-white px-6 py-3 rounded hover:bg-primary-700 transition duration-300"
+            >
               Get Started
-            </button>
+            </Link>
 
             {/* 4) "Explore Services" scrolls to services section */}
             <button
@@ -113,21 +115,34 @@ export const Services = () => (
     <div className="container mx-auto px-6">
       <h2 className="text-3xl font-bold text-center mb-12 text-white">Our AI-Powered Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <Link to="/services">
         <ServiceCard
           title="Pension Services"
           description="Get assistance with Pension application, status check, and understanding your pension benefits."
           icon={FiFileText}
         />
+        </Link>
+        <Link to="/services">
+        <ServiceCard
+          title="Tax Services"
+          description="Get help with filing your taxes, understanding deductions, and resolving tax-related queries."
+          icon={FiCreditCard}
+        />
+        </Link> 
+        <Link to="/services">
         <ServiceCard
           title="Education Support"
           description="Information about scholarships, student loans, and educational programs."
           icon={FiCreditCard}
         />
+        </Link>
+        <Link to="/services">
         <ServiceCard
           title="Housing Assistance"
           description="Information about government housing schemes, subsidies, and application procedures."
           icon={FiHelpCircle}
         />
+        </Link>
       </div>
     </div>
   </section>

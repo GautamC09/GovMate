@@ -18,7 +18,7 @@ export const Header = ({ user }) => {
     <header className="fixed w-full bg-[#0d0d0d] shadow-sm z-50 py-4 top-0">
       <nav className="container mx-auto px-6">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-primary-600">GovMate</div>
+          <Link to="/" className="text-2xl font-bold text-primary-600">GovMate</Link>
           <div className="hidden md:flex space-x-6">
             <Link to="/" className="text-white hover:text-gray-350">Home</Link>
             <Link to="/services" className="text-white hover:text-gray-350">Services</Link>
