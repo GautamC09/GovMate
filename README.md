@@ -113,11 +113,20 @@ cd govmate
 
 ## Screenshots
 
-![Homepage Screenshot](./Screenshots/Landing.png)
+![Homepage Screenshot](./screenshots/Landing.png)
 *Caption: The application homepage.*
 
-![Features](./Screenshots/Features.png)
+![Features](./screenshots/Features.png)
 *Caption: Available Chatbots*
 
-![Analysis Results](./Screenshots/Chatbot.png)
+![Analysis Results](./screenshots/Chatbot.png)
 *Caption: Example of Chat*
+
+---
+
+## Acknowledgments
+
+- **Pinecone** for vector search capabilities.
+- **Groq** for powerful NLP models.
+- **React** and Flask for building the frontend and backend.
+- **Firebase** for authentication and user management.
